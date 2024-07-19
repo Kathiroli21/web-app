@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 const taskRoutes = require('./routes/taskRoutes');
-require('dotenv').config();  // Ensure this line is included to read .env file
+require('dotenv').config();  
 
-console.log('MONGO_URI:', process.env.MONGO_URI);  // Check environment variables
-console.log('SECRET_KEY:', process.env.SECRET_KEY);    // Check environment variables
+console.log('MONGO_URI:', process.env.MONGO_URI);  
+console.log('SECRET_KEY:', process.env.SECRET_KEY);    
 
 app.use(cors());
 app.use(express.json());
